@@ -59,6 +59,23 @@ We will explain the following steps one-by-one:
 
 All the experiments were run in a virtual environment created with pip on a Linux machine.
 
+* Pughlab instance was set up using a conda environment as follows:
+```console
+conda create --prefix /mnt/work1/users/pughlab/bin/conda-envs/SRTPMs_3.7 python=3.7.0
+conda activate /mnt/work1/users/pughlab/bin/conda-envs/SRTPMs_3.7
+
+pip install --upgrade pip
+
+cd /mnt/work1/users/pughlab/bin/SRTPMs
+
+pip install Cython==0.29.12
+pip install 'setuptools<45.0.0' --force-reinstall
+pip install openslide-python==1.1.1
+pip install numpy==1.16.4
+pip install -r requirements.txt
+
+```
+
 To install requirements:
 
 ```console
